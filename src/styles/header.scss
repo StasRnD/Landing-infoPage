@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 97px;
+}
+
+.header__nav {
+  margin-left: 31px;
+}
+
+.header__list {
+  font-weight: 700;
+  column-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #4c858b;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.header__list-item {
+  line-height: 23px;
+  padding: 0;
+}
+
+.header__list-item:nth-last-child(1) {
+  margin-right: 30px;
+}
+.header__telephone {
+  letter-spacing: 8%;
+  line-height: 20px;
+  margin: 0;
+  color: #4c858b;
+  margin-left: 56px;
+}
+
+.header__telephone-number {
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+
+.header__call-me {
+  margin-left: 70px;
+  color: #ae2236;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.header__social-network {
+  margin-left: 61px;
+}
+
+.header__interaction {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.header__interaction-item {
+  padding: 17px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+}
