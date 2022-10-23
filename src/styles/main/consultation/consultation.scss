@@ -1,0 +1,88 @@
+.consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1218px;
+}
+.consultation__title {
+  text-align: center;
+  margin: 0;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.consultation__subtitle {
+  font-weight: 300;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.consultation__social-network {
+  margin-top: 31px;
+}
+
+.consultation__form {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  padding: 57px 55px 61px 59px;
+  width: 71%;
+  box-sizing: border-box;
+}
+
+.consultation__form-fieldset {
+  border: none;
+  margin-top: 22px;
+  padding: 0;
+  display: flex;
+  column-gap: 16px;
+}
+
+.consultation__form-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.consultation__form-title span {
+  font-weight: 700;
+  color: #ea6628;
+}
+
+.consultation__form-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+  line-height: 30px;
+}
+
+.consultation__form-input {
+  width: 33%;
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.15);
+  padding: 17px;
+  box-sizing: border-box;
+}
+
+.consultation__form-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b1b1b1;
+}
+
+.consultation__form-button {
+  font-weight: 700;
+  line-height: 20px;
+  padding: 18px 0;
+  width: 34%;
+  border-radius: 4px;
+  color: white;
+  background-color: #215359;
+  border: none;
+  font-size: 16px;
+}

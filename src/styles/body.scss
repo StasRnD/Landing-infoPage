@@ -1,11 +1,22 @@
 .body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #fff;
   font-family: 'Montserrat', 'Lato', sans-serif;
   padding-top: 26px;
+  max-width: 1920px;
 }
 
 .body__header {
-  margin: 0 53px 0 82px;
+  margin-left: 82px;
+  margin-right: 51px;
+  max-width: 1785px;
+}
+
+.body__main {
+  margin: 53px 0 0 351px;
+}
+
+.body__footer {
+  margin-top: 122px;
 }

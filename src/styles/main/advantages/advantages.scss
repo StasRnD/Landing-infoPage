@@ -1,0 +1,79 @@
+.advantages {
+  display: flex;
+}
+
+.advantages__info-text {
+  max-width: 609px;
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 63px;
+}
+
+.advantages__title-subtitle {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 63px;
+  text-transform: uppercase;
+  color: #e33e54;
+}
+
+.advantages__list {
+  max-width: 533px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding: 0;
+  padding-left: 13px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.advantages__list-text {
+  line-height: 24px;
+  list-style: none;
+  background-image: url(../../../images/bullet.png);
+  background-repeat: no-repeat;
+  background-position: 15px 7px;
+  padding-left: 40px;
+}
+
+.advantages__banner {
+  align-self: center;
+  position: relative;
+  background-image: url(../../../images/blob-turquoise.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 766px;
+  min-height: 541px;
+}
+
+.advantages__banner-foto {
+  position: relative;
+  top: -28px;
+  left: 179px;
+}
+
+.advantages__banner::after,
+.advantages__banner::before {
+  position: absolute;
+  background-image: url(../../../images/group-points.png);
+
+  content: '';
+  width: 43px;
+  height: 147px;
+}
+
+.advantages__banner::after {
+  top: 3px;
+  left: 145px;
+}
+
+.advantages__banner::before {
+  right: 57px;
+  bottom: -29px;
+}

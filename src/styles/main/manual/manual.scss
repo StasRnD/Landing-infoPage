@@ -1,0 +1,38 @@
+.manual {
+  max-width: 1218px;
+}
+
+.manual__title {
+  margin: 0;
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.manual__text {
+  margin: 0;
+  margin-top: 66px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.manual__video {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+
+  padding-top: 49px;
+  margin-top: 51px;
+  background-image: url('../../../images/background-manual.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.manual__video-iframe {
+  display: block;
+  width: 69%;
+  height: 438px;
+  border: 0;
+}

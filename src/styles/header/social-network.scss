@@ -1,0 +1,47 @@
+.social-network {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.social-network_column-gap {
+  column-gap: 38px;
+}
+
+.social-network_footer {
+  margin-top: 31px;
+  padding-left: 25px;
+}
+
+.social-network__vk-telegramm {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #4c858b;
+}
+
+.social-network__vk-telegramm_orange {
+  color: #ea6628;
+}
+
+.social-network__vk-telegramm:hover {
+  opacity: 0.5;
+}
+
+.social-network__insta-whatsapp {
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #4c858b;
+}
+
+.social-network__insta-whatsapp_orange {
+  color: #ea6628;
+}
+
+.social-network__insta-whatsapp:hover {
+  opacity: 0.5;
+}
+.consultation__form {
+  margin-top: 37px;
+}

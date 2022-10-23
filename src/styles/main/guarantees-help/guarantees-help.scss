@@ -1,0 +1,50 @@
+.guarantees-help {
+  max-width: 1218px;
+}
+
+.guarantees-help__title {
+  margin: 0;
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.guarantees-help__subtitle {
+  margin: 0;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.guarantees-help__items {
+  display: flex;
+  column-gap: 29px;
+  margin-top: 51px;
+}
+
+div.guarantees-help__item {
+  width: 33%;
+}
+
+.guarantees-help__item-title {
+  margin: 0;
+  margin-top: 33px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.guarantees-help__item-text {
+  line-height: 30px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.guarantees-help__item-image {
+  display: block;
+}
+
+.guarantees-help__item-year {
+  font-weight: 600;
+  color: #e33e54;
+}

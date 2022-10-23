@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'index.[contenthash].js',
-    assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
+    assetModuleFilename: path.join('[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -45,7 +45,7 @@ module.exports = {
         test: /\.svg$/,
         type: 'asset/resource',
         generator: {
-          filename: path.join('icons', '[name].[contenthash][ext]'),
+          filename: path.join('[name].[contenthash][ext]'),
         },
       },
     ],

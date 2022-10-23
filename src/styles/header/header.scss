@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 97px;
+}
+
+.header__nav {
+  margin: 0 46px 0 31px;
+}
+
+.header__list {
+  font-weight: 700;
+  column-gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+}
+
+.header__list-item {
+  font-family: inherit;
+  line-height: 23px;
+  padding: 0;
+  color: #4c858b;
+  text-decoration: none;
+}
+
+.header__list-item:hover {
+  opacity: 0.5;
+}
+
+.header__telephone {
+  letter-spacing: 8%;
+  line-height: 20px;
+  margin: 0;
+  color: #4c858b;
+  margin-left: 56px;
+  letter-spacing: 1px;
+}
+
+.header__telephone-number {
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+
+.header__call-me {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  color: #ae2236;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 17px;
+  font-size: 14px;
+}
+.header__call-me::after {
+  width: 100%;
+  content: '';
+  border-bottom: 1px dashed #ae2236;
+}
+
+.header__call-me:hover {
+  opacity: 0.5;
+}
+
+.header__social-network {
+  margin-left: 61px;
+}
+
+.header__interaction {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.header__interaction-point {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding: 16px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+}
+
+.header__interaction-icon {
+  display: block;
+}
+
+.header__quantity-products::after {
+  content: '10';
+  padding: 3px 4px 5px;
+  background-color: #e33e54;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 800;
+  font-family: Lato;
+}
+
+.header__burger-menu {
+  padding: 27px;
+  border-radius: 50%;
+  background-color: #e33e54;
+  margin-left: 52px;
+}
