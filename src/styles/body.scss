@@ -3,7 +3,7 @@
   padding: 0;
   background-color: #fff;
   font-family: 'Montserrat', 'Lato', sans-serif;
-  padding-top: 26px;
+  padding: 26px 0 0;
   max-width: 1920px;
 }
 
@@ -19,4 +19,46 @@
 
 .body__footer {
   margin-top: 122px;
+}
+
+@media screen and (max-width: 1750px) {
+  .body__main {
+    margin: 53px 0 0 81px;
+  }
+
+  .body__header {
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: calc(100%-80px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .body {
+    padding: 26px 0 0;
+  }
+
+  .body__header {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: calc(100%);
+  }
+
+  .body__main {
+    margin: 53px 0 0;
+  }
+
+  .body__footer {
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    padding: 16px 0 0;
+  }
+
+  .body__main {
+    margin: 41px 0 0;
+  }
 }

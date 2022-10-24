@@ -42,6 +42,26 @@
 .social-network__insta-whatsapp:hover {
   opacity: 0.5;
 }
-.consultation__form {
-  margin-top: 37px;
+
+@media screen and (max-width: 1280px) {
+  .social-network_footer {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1043px) {
+  .social-network_footer {
+    margin-top: 0;
+  }
+
+  .social-network__insta-whatsapp {
+    width: 19px;
+    height: 19px;
+  }
+
+  .social-network__vk-telegramm {
+    width: 23px;
+    height: 23px;
+  }
 }

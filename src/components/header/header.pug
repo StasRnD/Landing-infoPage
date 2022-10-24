@@ -1,27 +1,29 @@
 header.header.body__header
     img.header__logo(src=require('../../images/logo.png') alt='Логотип')
-    div.header__burger-menu
-    nav.header__nav
-        ul.header__list
-            li
-                a.header__list-item(href="") каталог товаров
-            li
-                a.header__list-item(href="") доставка и оплата
-            li
-                a.header__list-item(href="") цены
-            li
-                a.header__list-item(href="") контакты
-    p.header__telephone +7 (812) 
-        span.header__telephone-number 509 21 98
-    a.header__call-me(href="") перезвоните мне
-    div.header__social-network
-        include ./social-network.pug
-    div.header__interaction
-        button.header__interaction-point  
-            img.header__interaction-icon(src=require("../../images/loupe-1.svg"), alt="поиск")          
-        button.header__interaction-point
-            img.header__interaction-icon(src=require("../../images/heart.svg"), alt="сердце-лайк")        
-        button.header__interaction-point.header__quantity-products
-            img.header__interaction-icon(src=require("../../images/shopping-cart.svg"), alt="корзина") 
+    div.header__header-content
+        div.header__burger-menu
+            span
+        nav.header__nav
+            ul.header__list
+                li
+                    a.header__list-item(href="") каталог товаров
+                li
+                    a.header__list-item(href="") доставка и оплата
+                li
+                    a.header__list-item(href="") цены
+                li
+                    a.header__list-item(href="") контакты
+        p.header__telephone +7 (812) 
+            span.header__telephone-number 509 21 98
+        a.header__call-me(href="") перезвоните мне
+        div.header__social-network
+            include ./social-network.pug
+        div.header__interaction
+            button.header__interaction-point  
+                img.header__interaction-icon(src=require("../../images/loupe-1.svg"), alt="поиск")          
+            button.header__interaction-point
+                img.header__interaction-icon(src=require("../../images/heart.svg"), alt="сердце-лайк")        
+            button.header__interaction-point.header__quantity-products
+                img.header__interaction-icon(src=require("../../images/shopping-cart.svg"), alt="корзина") 
         
     

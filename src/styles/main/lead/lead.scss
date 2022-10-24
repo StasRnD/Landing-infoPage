@@ -11,6 +11,7 @@
 .lead__nav {
   margin-top: 39px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   column-gap: 6px;
@@ -26,6 +27,10 @@
   text-decoration: none;
 }
 
+.lead__nav-link:hover {
+  color: #e33e54;
+}
+
 .lead__nav-item:nth-child(n + 2)::before {
   content: url('../../../images/right-arrow.svg');
   margin-right: 6px;
@@ -33,6 +38,9 @@
 
 .lead__nav-item:last-child .lead__nav-link {
   color: #4c858b;
+}
+.lead__nav .lead__nav-item:nth-last-child(-n + 2) {
+  display: none;
 }
 
 .lead__text-info {
@@ -45,4 +53,48 @@
 .lead__text-info-product {
   color: #e33e54;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1750px) {
+  .lead {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .lead__nav {
+    margin-top: 30px;
+    padding: 14px 0;
+  }
+
+  .lead__text-info {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__nav .lead__nav-item:nth-last-child(-n + 2) {
+    display: block;
+  }
+  .lead__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .lead__nav {
+    margin-top: 11px;
+    padding: 8px 0;
+  }
+
+  .lead__text-info {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 26px;
+  }
 }

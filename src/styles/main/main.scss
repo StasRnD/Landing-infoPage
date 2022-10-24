@@ -28,3 +28,62 @@
 .main__finish-work {
   margin-top: 103px;
 }
+
+@media screen and (max-width: 1750px) {
+  .main {
+    max-width: calc(100% - 164px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .main__advantages {
+    margin-top: 19px;
+  }
+
+  .main__stages-work {
+    margin-top: 66px;
+  }
+
+  .main__guarantees-help {
+    margin-top: 70px;
+  }
+
+  .main__consultation {
+    margin-top: 52px;
+  }
+
+  .main__manual {
+    margin-top: 48px;
+  }
+
+  .main__finish-work {
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__advantages {
+    margin-top: 16px;
+  }
+
+  .main__stages-work {
+    margin-top: 36px;
+  }
+
+  .main__guarantees-help {
+    margin-top: 40px;
+  }
+
+  .main__consultation {
+    margin-top: 41px;
+  }
+
+  .main__finish-work {
+    margin-top: 48px;
+  }
+}

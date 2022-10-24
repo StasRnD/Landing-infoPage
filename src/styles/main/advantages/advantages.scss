@@ -53,9 +53,29 @@
 }
 
 .advantages__banner-foto {
+  display: block;
   position: relative;
   top: -28px;
   left: 179px;
+}
+
+.advantages__banner-arrow::before,
+.advantages__banner-arrow::after {
+  position: absolute;
+  background-image: url(../../../images/triangle-1.png);
+  content: '';
+  width: 77px;
+  height: 19px;
+}
+
+.advantages__banner-arrow::before {
+  top: 150px;
+  left: 16px;
+}
+
+.advantages__banner-arrow::after {
+  top: 60px;
+  right: 0;
 }
 
 .advantages__banner::after,
@@ -76,4 +96,62 @@
 .advantages__banner::before {
   right: 57px;
   bottom: -29px;
+}
+
+@media screen and (max-width: 1280px) {
+  .advantages {
+    display: block;
+  }
+  .advantages__banner {
+    display: none;
+  }
+
+  .advantages__info-text {
+    max-width: 100%;
+  }
+
+  .advantages__title-subtitle {
+    display: block;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .advantages__title-subtitle {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .advantages__list {
+    max-width: 100%;
+    padding-left: 13px;
+    margin: 0;
+    margin-top: 21px;
+    row-gap: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages__title {
+    font-size: 18px;
+    line-height: 37px;
+  }
+
+  .advantages__title-subtitle {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .advantages__list {
+    padding-left: 0px;
+    margin-top: 17px;
+  }
+
+  .advantages__list-text {
+    font-size: 14px;
+  }
 }
