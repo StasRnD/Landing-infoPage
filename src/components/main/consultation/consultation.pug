@@ -56,7 +56,7 @@ section.consultation.main__consultation
         h3.consultation__form-title Для <span>консультации</span> заполните форму!
         p.consultation__form-text И с Вами свяжутся в ближайшее время
         fieldset.consultation__form-fieldset            
-            input.consultation__form-input(type="text" placeholder='Ваше имя' name='name' id="username")            
-            input.consultation__form-input(type="tel" placeholder='Ваш телефон' name='phone' id='userphone')
+            input.consultation__form-input.user-name-js(type="text" placeholder='Ваше имя' name='name' id="username" minlength='2' value='' required)            
+            input.consultation__form-input.user-phone-js(type="tel" placeholder='Ваш телефон' name='phone' id='userphone' minlength='8' maxlength='18'  value='' required)
             button.consultation__form-button отправить
 
