@@ -9,6 +9,7 @@ const inputForm = document.querySelector('.input-form-js');
 const validateInputTelText = document.querySelector('.validate-input-tel-js');
 const form = document.querySelector('.form');
 
+//Исправлен баг с запросе fetch
 loadBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
   const searchValue = searchInput.value.trim().toLowerCase();
@@ -37,6 +38,7 @@ loadBtn.addEventListener('click', function (evt) {
     );
 });
 
+//Запрос с помощью axios
 axios
   .get('https://jsonplaceholder.typicode.com/users')
   .then((res) => {
@@ -59,17 +61,18 @@ axios
     </div>`)
   );
 
+//Валидация инпута с помощью с использованием try/catch
 const validate = (evt) => {
-  const value = evt.target.value.replace(/\s*/g, '');
+  const value = evt.target.value.trim();
 
   try {
-    if (value.trim() === '') throw new Error('поле не должно быть пустым');
+    if (value === '') throw new Error('поле не должно быть пустым');
 
     if (!Number(value))
       throw new Error('В поле должны быть введены только цифры');
 
-    if (value.trim().length < 5 || value.trim().length > 10)
-      throw new Error('Кол-во символов поля от 5 до 10 символов');
+    if (value.length < 5 || value.length > 10)
+      throw new Error('Кол-во символов поля должно быть от 5 до 10 символов');
 
     validateInputTelText.classList.remove('form__span_active');
   } catch (err) {
@@ -83,6 +86,7 @@ form.addEventListener('submit', (evt) => {
   evt.preventDefault();
 });
 
+//Переписанная функция лоттерие с помощью async/await
 async function lottery() {
   console.log('Вы начали игру');
   let promise = new Promise((resolve, reject) => {
